@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
+*{
+    margin:2px;
+}
+
+img{
+    height: 190px;
+    border-radius: 50%;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+.emp{
+    position: absolute;
+    top: 33px;
+    left: 40px;
+    width: 1440px;
+    height: 90px;
+    border: 4px solid #808080;
+    border-radius: 20px;
+}
+
+.emp1{
+    position: absolute;
+    top: 28px ;
+    left: 50px ;
+    font-weight: 200; 
+    font-size: 24px;
+    border-radius: 100%;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    height:800px;
+    width: 1450px;
+    position:absolute;
+    top:165px;
+    left:41px;
+    gap:20px
+}
+
+.container1{
+    display:grid;
+    grid-template-columns: auto;
+    gap:20px;
+}
+.box1{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    gap:15px
+}
+
+.box1, .box2, .box3{
+    border: #808080 4px solid;
+    border-radius: 10%;
+}
+
+
+
+
+span{
+font-family: 'Inter'; 
+font-weight: 200;
+font-size: 24px;
+line-height: 29px;
+text-transform: uppercase;
+}
+
+.box2{
+    position: relative;
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 200;
+   line-height: 29px;
+   text-transform: uppercase;
+}
+
+ul{
+    position:relative; 
+    top:60px;
+    right: 10px;   
+}
+   
+.box3{
+   position: relative;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight:200 ;
+  line-height: 29px;
+  text-transform: uppercase;
+}
+
+.icons{
+    position:relative; 
+    top:50px;
+    left: 30px;
+}
+
+a{
+    color:#FFFFFF;
+    text-decoration: none; 
+}
+
+.Rcontainer{
+    border:#808080 4px solid;
+    border-radius: 20px;
+}
+
+table{
+    border: 4px solid #808080;
+    border-radius: 20px;
+    margin: 40px;
+    height: 800px;
+    width: 1000px;
+    border-collapse: collapse;
+}
+
+.heading{
+    position: relative;
+    top:20px;
+    left:40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 26px;
+    line-height: 60px;
+    text-transform: capitalize;
+}
+
+
+
+td ,th{
+    border: 2px solid #808080;
+}
+
+th{
+    padding: 10px;
+}
+
+tr{
+    text-align: center;
+}
+
+input{
+    height: 0px;
+    width: 0px;
+}
+
+ /* label{
+    display: inline-block;
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    border: 2px solid rgb(128, 128, 128);
+} */
+/* input:checked + label{
+    background-color: #9acd32;
+} */
+
+.box4 {
+    /* display: block; */
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    
+  }
+
+  input[type=checkbox] {
+    visibility: hidden;
+  }
+
+  .mark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border: 2px solid rgb(128, 128, 128);
+    background-color: black;
+  }
+  .box4:hover input + .mark {
+    background-color: #1c87c9;
+  }
+
+  .box4 input:active + .mark {
+    background-color: #ffcc00;
+  }
+  
+  .box4 input:checked + .mark {
+    background-color: #8ebf42;
+  }
+
+  .mark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .box4 input:checked + .mark:after {
+    display: block;
+  }
+  .box4 .mark:after {
+    left: 8px;
+    bottom: 5px;
+    width: 6px;
+    height: 12px;
+    border: solid #eee;
+    border-width: 0 4px 4px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+
+  
+
+@media screen and (max-width: 600px) {
+    *{
+        font-size: 14px;
+    }
+    
+    img{
+        height: 150px;
+        border-radius: 50%;
+    }
+
+    .container{
+        display: flex;
+        flex-flow: column wrap;
+        height:auto;
+        width: 100vw;
+        position:absolute;
+        top:150px;
+        left:35px;
+        gap:20px;
+    }
+
+    .emp{
+        font-size: 12px;
+        width: 100vw; 
+    }
+
+    .container1{
+        font-size: 12px;
+        width: 100vw; 
+    }
+    ul{ 
+        top:6px;
+        left: 10px;   
+    }
+
+    .icon{ 
+        top:6px;
+        left: 30px;   
+    }
+
+    .Rcontainer{
+        font-size: 12px;
+        width: 100vw; 
+    }
+
+    table{
+        border: 4px solid #808080;
+        border-radius: 10px;
+        margin: 20px;
+        height: 100%;
+        width: 100%;
+    }
+}
